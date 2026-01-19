@@ -1,0 +1,37 @@
+# StreamBench 默认配置
+
+# 评估设置
+evaluation:
+  segment_duration: 10  # 每段视频时长(秒)
+  num_key_frames: 5     # 每段采样的关键帧数
+
+# 模型设置
+models:
+  dino:
+    model_name: dino_vitb16
+    input_size: 224
+  clip:
+    model_name: ViT-B/32
+  raft:
+    model_name: raft_large
+  languagebind:
+    cache_dir: ./pretrained
+  vlm:
+    model: gpt-4o
+    max_tokens: 10
+
+# 聚合策略
+aggregation:
+  quality:
+    strategy: vde_decay
+    weight_type: linear
+  temporal:
+    strategy: mean
+  instruction:
+    strategy: mean
+
+# 指标权重 (可选，默认均等)
+weights:
+  quality: 1.0
+  temporal: 1.0
+  instruction: 1.0

@@ -1,0 +1,11 @@
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+vbench
+opencv-python
+numpy
+pyyaml
+tqdm
+openai>=1.0.0
+languagebind
+git+https://github.com/openai/CLIP.git

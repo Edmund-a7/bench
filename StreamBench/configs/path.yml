@@ -1,0 +1,28 @@
+# 模型路径配置
+# 如果模型需要离线加载，在此处配置本地路径
+
+# DINO 模型
+dino:
+  # 默认从 torch.hub 自动下载
+  # 如需离线，设置为本地路径
+  weights_path: null  # e.g., ./pretrained/dino_vitb16.pth
+
+# CLIP 模型
+clip:
+  # 默认从 OpenAI 自动下载
+  weights_path: null  # e.g., ./pretrained/ViT-B-32.pt
+
+# RAFT 模型
+raft:
+  # 默认从 torchvision 自动下载
+  weights_path: null
+
+# LanguageBind 模型
+languagebind:
+  cache_dir: ./pretrained
+  video_model: LanguageBind_Video_FT
+
+# VBench 工具
+vbench:
+  # VBench 安装路径（如果使用 pip 安装则无需配置）
+  install_path: null
