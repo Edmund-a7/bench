@@ -1,0 +1,6 @@
+[submodule "IVEBench"]
+	path = IVEBench
+	url = https://github.com/RyanChenYN/IVEBench.git
+[submodule "VBench"]
+	path = VBench
+	url = https://github.com/Vchitect/VBench.git
